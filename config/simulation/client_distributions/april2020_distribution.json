@@ -1,0 +1,35 @@
+[
+  {
+    "representation_percent": 0.98,
+    "client_type": "routinely_polling_client",
+    "humanized_label": "fast_poller",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 1,
+    "max_network_jitter_ms": 100,
+    "custom_int_properties": {
+      "dflt_poll_interval_seconds": 1
+    }
+  },
+  {
+    "representation_percent": 0.01,
+    "client_type": "fully_disappearing_client",
+    "humanized_label": "immediately_exiting_client",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 1000,
+    "max_network_jitter_ms": 1000,
+    "custom_int_properties": {
+      "polls_before_disappearing": 1
+    }
+  },
+  {
+    "representation_percent": 0.01,
+    "client_type": "fully_disappearing_client",
+    "humanized_label": "eventually_exiting_client",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 1000,
+    "max_network_jitter_ms": 1000,
+    "custom_int_properties": {
+      "polls_before_disappearing": 3
+    }
+  }
+]

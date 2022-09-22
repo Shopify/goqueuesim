@@ -1,0 +1,118 @@
+[
+  {
+    "representation_percent": 0.08,
+    "client_type": "lazy_polling_client",
+    "humanized_label": "semi_inactive_early_poller",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 1,
+    "max_network_jitter_ms": 900,
+    "custom_int_properties": {
+      "dflt_poll_interval_seconds": 5
+    },
+    "custom_float_properties": {
+      "skip_polling_probability_pct": 0.65
+    }
+  },
+  {
+    "representation_percent": 0.05,
+    "client_type": "routinely_polling_client",
+    "humanized_label": "standard_early_routine_poller",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 20000,
+    "max_network_jitter_ms": 800,
+    "custom_int_properties": {
+      "dflt_poll_interval_seconds": 6
+    }
+  },
+  {
+    "representation_percent": 0.02,
+    "client_type": "fully_disappearing_client",
+    "humanized_label": "impatient_exiting_client",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 20,
+    "max_network_jitter_ms": 1,
+    "custom_int_properties": {
+      "dflt_poll_interval_seconds": 1,
+      "polls_before_disappearing": 3
+    }
+  },
+  {
+    "representation_percent": 0.20,
+    "client_type": "routinely_polling_client",
+    "humanized_label": "active_poller",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 30000,
+    "max_network_jitter_ms": 400,
+    "custom_int_properties": {
+      "dflt_poll_interval_seconds": 1
+    }
+  },
+  {
+    "representation_percent": 0.05,
+    "client_type": "routinely_polling_client",
+    "humanized_label": "high_latency_routine_poller",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 30,
+    "max_network_jitter_ms": 3000,
+    "custom_int_properties": {
+      "dflt_poll_interval_seconds": 5
+    }
+  },
+  {
+    "representation_percent": 0.05,
+    "client_type": "jit_greedy_poller",
+    "humanized_label": "jit_early_window_cheater",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 15000,
+    "max_network_jitter_ms": 200,
+    "custom_int_properties": {
+      "greedy_polls_count": 4,
+      "early_poll_lead_time_ms": 200,
+      "greedy_polls_delay_ms": 100,
+      "window_dur_ms": 5000
+    },
+    "custom_bool_properties": {
+      "window_cheater_only": true
+    }
+  },
+  {
+    "representation_percent": 0.05,
+    "client_type": "fully_disappearing_client",
+    "humanized_label": "immediately_exiting_client",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 50,
+    "max_network_jitter_ms": 1,
+    "custom_int_properties": {
+      "dflt_poll_interval_seconds": 1,
+      "polls_before_disappearing": 1
+    }
+  },
+  {
+    "representation_percent": 0.20,
+    "client_type": "jit_greedy_poller",
+    "humanized_label": "sneaky_preemptive_poller",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 50,
+    "max_network_jitter_ms": 1,
+    "custom_int_properties": {
+      "greedy_polls_count": 4,
+      "early_poll_lead_time_ms": 200,
+      "greedy_polls_delay_ms": 100,
+      "window_dur_ms": 5000
+    },
+    "custom_bool_properties": {
+      "window_cheater_only": false
+    }
+  },
+  {
+    "representation_percent": 0.30,
+    "client_type": "routinely_polling_client",
+    "humanized_label": "active_poller",
+    "obeys_server_poll_after": false,
+    "max_initial_delay_ms": 50,
+    "max_network_jitter_ms": 200,
+    "custom_int_properties": {
+      "dflt_poll_interval_seconds": 1
+    }
+  }
+]
