@@ -28,7 +28,7 @@ Open-sourced at similar low-fidelity to its prototypical origins but readily-act
 </p>
 <br/>
 
-### 🔗 &nbsp; Requirements (à la "dependency injection")
+### 🔗 &nbsp; Requirements
 
 First, install project Go dependencies to your local environment:
 
