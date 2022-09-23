@@ -12,7 +12,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Usage](#usage)
+- [Usage](#-usage)
 - [Notable Feature Gaps](#notable-feature-gaps)
 - [Contributing](#contributing)
 
